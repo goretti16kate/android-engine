@@ -1,9 +1,14 @@
 fun main() {
-    printBorder()
+    val border = "`-._,-'"
+    val timesToRepeat = 4
+    printBorder(border, timesToRepeat)
     println("Happy Birthday, Jhansi!")
-    printBorder()
+    printBorder(border, timesToRepeat)
 }
 
-fun printBorder() {
-    println("=======================")
+fun printBorder(border: String, timesToRepeat: Int) {
+    repeat(timesToRepeat) {
+        print(border)
+    }
+    println()
 }
